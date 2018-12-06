@@ -7,7 +7,7 @@
         <div class="col-md-2"></div>
       <div class="col-md-8-4 col-sm-8 col-xs-8">
         <div class="section-headline services-head text-center">
-            <img src="/images/Jobbox logo 100px.png" style="margin-top:20px;"><br/>
+            <img src="/images/logo100px.png" style="margin-top:20px;"><br/>
             <h2 style="margin-top:20px;">Iniciar sesión</h2>
         </div>
         <div class="section-headline services-head text-right">
