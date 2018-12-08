@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.prin')
 
 @section('content')
 <div id="services" class="services-area area-padding">

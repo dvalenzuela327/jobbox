@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.prin')
 
 @section('content')
 
@@ -43,12 +43,12 @@
                         @endif
                     </div>
                 </div>
+
                 <!-- select-->
                 <div class="form-group row">
-                    <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Tipo') }}</label>
+                    <label for="type" class="col-md-4 col-form-label text-md-right">{{ __('Tipo de usurio') }}</label>
 
                     <div class="col-md-6">
-
                         <select name="type" id="type" class="form-control{{ $errors->has('type') ? ' is-invalid' : '' }}" value="{{ old('type') }}" required>
                             <option value="">Seleccionar opción</option>
                             <option value="cliente">Cliente</option>
