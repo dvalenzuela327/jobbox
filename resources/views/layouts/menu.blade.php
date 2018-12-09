@@ -1,29 +1,41 @@
 @extends('layouts.style')
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+<!-- Header  -->
+<div class="wrapper style1">
+  <!-- Header -->
+  <div id="header">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
+      <!-- Logo -->
+      <h1><a href="/homme" id="logo"><img src="images/logo100px.png" alt=""></a></h1>
+        
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li>
+            <a href="">Dropdown</a>
+            
+            <ul>
+              <li><a href="#">Lorem ipsum dolor</a></li>
+              <li><a href="#">Magna phasellus</a></li>
+              <li><a href="#">Etiam dolore nisl</a></li>
+              <li>
+                <a href="">Phasellus consequat</a>
+                <ul>
+                  <li><a href="#">Lorem ipsum dolor</a></li>
+                  <li><a href="#">Phasellus consequat</a></li>
+                  <li><a href="#">Magna phasellus</a></li>
+                  <li><a href="#">Etiam dolore nisl</a></li>
+                  <li><a href="#">Veroeros feugiat</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Veroeros feugiat</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+          <li><a href="left-sidebar.html">Left Sidebar</a></li>
+          <li><a href="right-sidebar.html">Right Sidebar</a></li>
+          <li><a href="no-sidebar.html">No Sidebar</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 @extends('layouts.scrips')

@@ -19,4 +19,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('/jobers', 'JoberController');
+
+Route::get('/admin', function () {
+    return view('admin.index');
+});
+
+Route::get('/admin2', function () {
+    return view('admin.index2');
+});
+
+Route::get('/admin/categories', function () {
+    return view('admin.categories.index');
+});

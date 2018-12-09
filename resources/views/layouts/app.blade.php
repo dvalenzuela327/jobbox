@@ -6,33 +6,24 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
-        
-        @include('layouts.style')
-    <!-- Favicons -->
-  
+       
+        @include('layouts.style')  
     </head>
 
     <body data-spy="scroll" data-target="#navbar-example">
-        <div id="preloader"></div>
-
         <header>
-        <!-- header-area start -->
-        @include('layouts.menu')
-        <!-- header-area end -->
+            <!-- header-area start -->
+            @include('layouts.menu')
+            <!-- header-area end -->
         </header>
   
-        <div class="row">
+        
             @yield('content') 
-        </div>
+      
    
         <!-- Start Footer bottom Area -->
         @include('layouts.footer')
         @include('layouts.scrips')
         @stack('scripts')
-        
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-        <!-- JavaScript Libraries -->
-
     </body>
 </html>
