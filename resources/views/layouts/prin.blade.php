@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
     <head>
-        <title>Solarize by TEMPLATED</title>
+        <title></title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -11,7 +11,7 @@
 
     <body data-spy="scroll" data-target="#navbar-example">  
         
-            @yield('content') 
+        @yield('content') 
        
    
         @include('layouts.scrips')

@@ -5,37 +5,47 @@
   <div id="header">
     <div class="container">
       <!-- Logo -->
-      <h1><a href="/homme" id="logo"><img src="images/logo100px.png" alt=""></a></h1>
+      <a href="/home" id="logo"><img src="images/logo100px.png" alt=""></a>
         
       <!-- Nav -->
       <nav id="nav">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="/home">Inicio</a></li>
+          <li class="active"><a href="#">Servicios</a></li>
           <li>
-            <a href="">Dropdown</a>
-            
-            <ul>
-              <li><a href="#">Lorem ipsum dolor</a></li>
-              <li><a href="#">Magna phasellus</a></li>
-              <li><a href="#">Etiam dolore nisl</a></li>
+            @guest
               <li>
-                <a href="">Phasellus consequat</a>
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Phasellus consequat</a></li>
-                  <li><a href="#">Magna phasellus</a></li>
-                  <li><a href="#">Etiam dolore nisl</a></li>
-                  <li><a href="#">Veroeros feugiat</a></li>
-                </ul>
+                <a href="{{ route('login') }}">{{ __('Iniciar sesión') }}</a>
               </li>
-              <li><a href="#">Veroeros feugiat</a></li>
-            </ul>
+              
+              <li>
+                @if (Route::has('register'))
+                  <a href="{{ route('register') }}">{{ __('Registrarse') }}</a>
+                @endif
+              </li>
+
+              @else
+                  <li class="dropdown">
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        {{ Auth::user()->name }} <span class="caret"></span>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        {{ __('Cerrar Sesión') }}
+                      </a>
+
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                      </form>
+              </li>
+            @endguest
+            
           </li>
-          <li><a href="left-sidebar.html">Left Sidebar</a></li>
-          <li><a href="right-sidebar.html">Right Sidebar</a></li>
-          <li><a href="no-sidebar.html">No Sidebar</a></li>
-      </ul>
-    </nav>
-  </div>
+        
+      </nav>
+    </div>
 </div>
 @extends('layouts.scrips')

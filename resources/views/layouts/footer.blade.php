@@ -1,8 +1,8 @@
-<footer id="footer">
+<div id="footer" style="background-color:#000">
   <section class="container">
     <header class="major">
-      <h2>Connect with us</h2>
-      <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+      <h2>Contactanos</h2>
+      <span class="byline">Nos puedes encontrar en todo el pais</span>
     </header>
     <ul class="icons">
       <li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
@@ -15,7 +15,7 @@
   
   <!-- Copyright -->
     <div id="copyright">
-      Diseño: <a href="http://team404.com">Team 404</a> 
+      Diseñado por: <a href="http://team404.com">Team 404</a> 
     </div>			
-</footer>
+  </div>
 @extends('layouts.scrips')
