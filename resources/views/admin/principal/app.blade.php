@@ -144,7 +144,7 @@
                     </span>
                   </a>
                   <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Lista</a></li>
+                    <li><a href="admin/categories"><i class="fa fa-circle-o"></i> Lista de categorias</a></li>
                     <li><a href="#"><i class="fa fa-circle-o"></i> Registrar</a></li>
                   </ul>
                 </li>  

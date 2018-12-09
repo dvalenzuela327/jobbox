@@ -24,10 +24,10 @@ Route::get('/admin', function () {
     return view('admin.index');
 });
 
-Route::get('/admin2', function () {
-    return view('admin.index2');
-});
-
 Route::get('/admin/categories', function () {
     return view('admin.categories.index');
+});
+
+Route::get('/admin/services', function () {
+    return view('admin.services.index');
 });
